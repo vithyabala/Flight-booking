@@ -1,0 +1,95 @@
+/* ------------------------------------------------------- */
+/*  MINIMAL MODERN ALL USERS PAGE (APPLE / AIRBNB STYLE)   */
+/* ------------------------------------------------------- */
+
+.all-users-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 13vh 3vw 5vh 3vw;
+    background: #f9fafb;
+    font-family: 'Inter', sans-serif;
+}
+
+.all-users-page h2 {
+    margin-bottom: 4vh;
+    color: #111827;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+/* ------------------------------------------------------- */
+/* USERS LIST CONTAINER                                    */
+/* ------------------------------------------------------- */
+
+.all-users {
+    width: 80%;
+    max-height: 35vh;
+    margin-bottom: 4vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+
+/* Minimalistic Scrollbar */
+.all-users::-webkit-scrollbar {
+    width: 6px;
+}
+
+.all-users::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+}
+
+.all-users::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+
+/* ------------------------------------------------------- */
+/* USER ROW STYLE (Like Apple list items)                  */
+/* ------------------------------------------------------- */
+
+.all-users .user {
+    width: 70%;
+    padding: 1.2rem 1.5rem;
+
+    background: #ffffff;
+    border-radius: 10px;
+
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    transition: 0.25s ease;
+}
+
+.all-users .user:hover {
+    background: #f3f4f6;
+    transform: translateX(3px);
+}
+
+
+/* ------------------------------------------------------- */
+/* TEXT STYLING                                            */
+/* ------------------------------------------------------- */
+
+.all-users .user p {
+    margin: 0;
+    color: #374151; /* Neutral slate gray */
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.all-users .user p b {
+    color: #111827; /* Strong black text */
+    font-weight: 600;
+}

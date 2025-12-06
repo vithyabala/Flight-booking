@@ -1,0 +1,149 @@
+/* ---------------------------------------------------------- */
+/*  MINIMAL MODERN BOOK FLIGHT PAGE (APPLE / AIRBNB STYLE)    */
+/* ---------------------------------------------------------- */
+
+.BookFlightPage {
+    width: 100%;
+    padding: 15vh 0 5vh 0;
+
+    display: flex;
+    justify-content: center;
+
+    background: #f9fafb;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* ---------------------------------------------------------- */
+/*  MAIN BOOKING CONTAINER (Card)                             */
+/* ---------------------------------------------------------- */
+
+.BookingFlightPageContainer {
+    width: 45%;
+    padding: 2.5rem;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+
+    font-family: 'Inter', sans-serif;
+}
+
+.BookingFlightPageContainer h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+
+/* ---------------------------------------------------------- */
+/*  FLIGHT DETAILS                                            */
+/* ---------------------------------------------------------- */
+
+.BookingFlightPageContainer p {
+    margin: 0 0 6px 0;
+    color: #374151;           /* Neutral slate */
+    font-size: 0.95rem;
+}
+
+.BookingFlightPageContainer p b {
+    font-weight: 600;
+    color: #111827;
+}
+
+.BookingFlightPageContainer li {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+
+/* ---------------------------------------------------------- */
+/*  TWO-COLUMN GRID (Span Sections)                           */
+/* ---------------------------------------------------------- */
+
+.BookingFlightPageContainer span {
+    display: grid;
+    grid-template-columns: 64% 33%;
+    gap: 3%;
+    margin-bottom: 1rem;
+}
+
+.BookingFlightPageContainer .span3 {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+    margin-bottom: 1rem;
+}
+
+
+/* ---------------------------------------------------------- */
+/*  BUTTON                                                    */
+/* ---------------------------------------------------------- */
+
+.BookingFlightPageContainer button {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 25px;
+
+    padding: 12px 0;
+
+    border-radius: 10px;
+    border: 1px solid #6366f1;
+    background: #6366f1;
+
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+
+    transition: 0.25s ease;
+}
+
+.BookingFlightPageContainer button:hover {
+    background: #4f46e5;
+    border-color: #4f46e5;
+}
+
+
+/* ---------------------------------------------------------- */
+/*  NEW PASSENGER SECTION                                     */
+/* ---------------------------------------------------------- */
+
+.new-passenger h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.new-passenger-inputs {
+    display: grid;
+    grid-template-columns: 67% 30%;
+    gap: 3%;
+}
+
+.new-passenger-inputs select,
+.new-passenger-inputs input {
+    padding: 10px 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    background: #ffffff;
+    font-size: 0.95rem;
+    color: #111827;
+
+    transition: 0.25s ease;
+}
+
+.new-passenger-inputs input:focus,
+.new-passenger-inputs select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+    outline: none;
+}

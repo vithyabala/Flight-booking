@@ -1,0 +1,42 @@
+/* ----------------------------------------------------------- */
+/*  MINIMAL MODERN FLIGHT ADMIN PAGE (APPLE / AIRBNB STYLE)    */
+/* ----------------------------------------------------------- */
+
+.flightAdmin-page {
+    padding-top: 15vh;
+    min-height: 100vh;
+    background: #f9fafb;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* ----------------------------------------------------------- */
+/*  NOT APPROVED MESSAGE BOX                                   */
+/* ----------------------------------------------------------- */
+
+.notApproved-box {
+    width: 50%;
+    margin: 30vh auto 0 auto;
+
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+
+    text-align: center;
+}
+
+.notApproved-box h3 {
+    color: #dc2626; /* Modern red tone (Apple error color) */
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.notApproved-box p {
+    color: #6b7280; /* Slate gray for subtle description */
+    font-size: 1rem;
+}

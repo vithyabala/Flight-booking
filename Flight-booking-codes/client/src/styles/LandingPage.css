@@ -1,0 +1,289 @@
+/* -------------------------------------------------------------- */
+/*  MINIMAL MODERN LANDING PAGE (APPLE / AIRBNB STYLE)            */
+/* -------------------------------------------------------------- */
+
+.landingPage {
+    width: 100%;
+    min-height: 100vh;
+    background: #f9fafb;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* -------------------------------------------------------------- */
+/* HERO SECTION                                                   */
+/* -------------------------------------------------------------- */
+
+.landingHero {
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+
+    background-image:
+        linear-gradient(45deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+        url('../assets/HomeBG1.jpg');
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.landingHero-title {
+    width: 60%;
+    margin: 8% 0 0 5%;
+}
+
+.landingHero-title h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.landingHero-title p {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.78);
+    margin-top: 10px;
+}
+
+
+/* -------------------------------------------------------------- */
+/* FLIGHT SEARCH BOX                                              */
+/* -------------------------------------------------------------- */
+
+.Flight-search-container {
+    margin-left: 5vw;
+    margin-top: 2vh;
+
+    background: #ffffff;
+    padding: 25px 25px 18px 25px;
+
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+
+    width: fit-content;
+}
+
+.Flight-search-container-body {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.Flight-search-container .error-text {
+    color: #dc2626;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+
+/* -------------------------------------------------------------- */
+/* FORM INPUTS                                                    */
+/* -------------------------------------------------------------- */
+
+.form-floating label {
+    font-size: 0.85rem;
+    color: #374151;
+}
+
+.Flight-search-container select,
+.Flight-search-container input {
+    width: 15vw;
+    padding: 12px 14px;
+
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+    color: #111827;
+    font-size: 0.95rem;
+
+    transition: 0.25s ease;
+}
+
+.Flight-search-container select:focus,
+.Flight-search-container input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.25);
+    outline: none;
+}
+
+
+/* SEARCH BUTTON */
+.search-btn {
+    height: 50px;
+    background: #6366f1;
+    border-color: #6366f1;
+    padding: 0 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.search-btn:hover {
+    background: #4f46e5;
+    border-color: #4f46e5;
+}
+
+
+/* -------------------------------------------------------------- */
+/*  MODERN APPLE / AIRBNB STYLE TOGGLE SWITCH                    */
+/* -------------------------------------------------------------- */
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.toggle-container span {
+    color: #374151;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 52px;
+    height: 28px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #d1d5db;
+    border-radius: 40px;
+
+    transition: 0.3s ease;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+
+    width: 22px;
+    height: 22px;
+    left: 3px;
+    top: 3px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.25);
+
+    transition: 0.3s ease;
+}
+
+.toggle-switch input:checked + .slider {
+    background-color: #6366f1;
+}
+
+.toggle-switch input:checked + .slider::before {
+    transform: translateX(24px);
+}
+
+
+/* -------------------------------------------------------------- */
+/* AVAILABLE FLIGHTS SECTION                                      */
+/* -------------------------------------------------------------- */
+
+.availableFlightsContainer {
+    margin: 4vh 5vw;
+}
+
+.availableFlightsContainer h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.Flights {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Flight {
+    width: 90%;
+    padding: 1.4rem 1.6rem;
+
+    background: #ffffff;
+    border-radius: 14px;
+
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: 0.25s ease;
+}
+
+.Flight:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.Flight p {
+    margin: 0;
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+.Flight p b {
+    color: #111827;
+    font-weight: 600;
+}
+
+
+/* -------------------------------------------------------------- */
+/* ABOUT SECTION                                                  */
+/* -------------------------------------------------------------- */
+
+.section-about {
+    padding: 6vh 5vw;
+    background: #ffffff;
+    margin-top: 4vh;
+    border-top: 1px solid #e5e7eb;
+}
+
+.section-about h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.section-about p {
+    text-align: justify;
+    color: #374151;
+    font-size: 1rem;
+}
+
+.section-about span {
+    display: block;
+    margin-top: 6vh;
+    text-align: center;
+    color: #6b7280;
+}
+
+.section-about span h5 {
+    font-size: 1rem;
+    color: #6366f1;
+}

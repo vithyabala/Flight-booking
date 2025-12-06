@@ -1,0 +1,119 @@
+/* ------------------------------------------------------ */
+/*  MINIMAL MODERN ALL FLIGHTS PAGE (APPLE / AIRBNB STYLE) */
+/* ------------------------------------------------------ */
+
+.allFlightsPage {
+    margin-top: 13vh;
+    padding: 2vh 4vw;
+    width: 100%;
+    background: #f9fafb;
+    font-family: 'Inter', sans-serif;
+}
+
+.allFlightsPage h1 {
+    color: #111827;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-left: 1vw;
+}
+
+
+/* ------------------------------------------------------ */
+/* FLIGHTS GRID                                            */
+/* ------------------------------------------------------ */
+
+.allFlights {
+    margin-top: 4vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    padding-bottom: 5vh;
+}
+
+
+/* ------------------------------------------------------ */
+/* INDIVIDUAL FLIGHT CARD                                  */
+/* ------------------------------------------------------ */
+
+.allFlights .allFlights-Flight {
+    width: 92%;
+    padding: 2rem;
+    margin-left: 4%;
+
+    background: #ffffff;
+    border-radius: 14px;
+
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+
+    transition: 0.25s ease;
+}
+
+.allFlights .allFlights-Flight:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+
+/* ------------------------------------------------------ */
+/* FLIGHT DETAIL ROWS                                      */
+/* ------------------------------------------------------ */
+
+.allFlights .allFlights-Flight span {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 5px;
+}
+
+
+/* ------------------------------------------------------ */
+/* TEXT STYLES                                             */
+/* ------------------------------------------------------ */
+
+.allFlights .allFlights-Flight p {
+    margin: 0;
+    margin-bottom: 4px;
+    color: #374151;       /* neutral gray, Apple-like */
+    font-size: 0.95rem;
+}
+
+.allFlights .allFlights-Flight p b {
+    font-weight: 600;
+    color: #111827;       /* strong text */
+}
+
+.allFlights .allFlights-Flight ol {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.allFlights .allFlights-Flight ol b {
+    font-weight: 500;
+}
+
+
+/* ------------------------------------------------------ */
+/* BUTTONS                                                  */
+/* ------------------------------------------------------ */
+
+.allFlights .allFlights-Flight button {
+    margin-top: 15px;
+
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #6366f1;
+
+    background: #6366f1;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    transition: 0.25s ease;
+}
+
+.allFlights .allFlights-Flight button:hover {
+    background: #4f46e5;
+    border-color: #4f46e5;
+}

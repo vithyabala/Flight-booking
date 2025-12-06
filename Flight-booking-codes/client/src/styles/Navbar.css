@@ -1,0 +1,91 @@
+/* -------------------------------------------------- */
+/* 🧊 MINIMALIST MODERN NAVBAR (APPLE / AIRBNB STYLE) */
+/* -------------------------------------------------- */
+
+.navbar {
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb; /* Light grey separator */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+
+    /* Soft Apple-like shadow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+
+/* -------------------------------------------------- */
+/* BRAND / LOGO                                       */
+/* -------------------------------------------------- */
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+.navbar h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+
+/* -------------------------------------------------- */
+/* NAV OPTIONS                                        */
+/* -------------------------------------------------- */
+
+.nav-options {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-options p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    color: #4b5563; /* Slate grey */
+    padding: 6px 2px;
+
+    transition: 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+/* Minimal underline hover */
+.nav-options p:hover {
+    color: #000000;
+    border-bottom: 2px solid #6366f1; /* Indigo accent */
+}
+
+
+/* -------------------------------------------------- */
+/* ACTIVE LINK                                        */
+/* -------------------------------------------------- */
+
+.nav-options .active {
+    color: #000000;
+    border-bottom: 2px solid #6366f1;
+    font-weight: 600;
+}

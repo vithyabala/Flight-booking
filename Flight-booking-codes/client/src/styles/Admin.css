@@ -1,0 +1,191 @@
+/* ------------------------------------------------------ */
+/*  MINIMALIST MODERN ADMIN PANEL (APPLE / AIRBNB STYLE)  */
+/* ------------------------------------------------------ */
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* --------------------------------------------- */
+/* PAGE WRAPPER                                  */
+/* --------------------------------------------- */
+
+.admin-page {
+    margin-top: 12vh;
+    padding: 4vh 4vw;
+    background: #f9fafb;
+    min-height: 100vh;
+}
+
+
+/* --------------------------------------------- */
+/* ADMIN CARDS GRID                              */
+/* --------------------------------------------- */
+
+.admin-page-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+
+/* --------------------------------------------- */
+/* ADMIN CARD DESIGN                             */
+/* --------------------------------------------- */
+
+.admin-card {
+    padding: 2.5vh 2vw;
+    height: 150px;
+
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    transition: 0.25s ease;
+}
+
+.admin-card:hover {
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+}
+
+.admin-card h4 {
+    margin: 0;
+    color: #111827;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.admin-card p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+
+/* --------------------------------------------- */
+/* REQUESTS CONTAINER                            */
+/* --------------------------------------------- */
+
+.admin-requests-container {
+    margin-top: 6vh;
+    width: 70%;
+    padding: 2rem;
+
+    background: #ffffff;
+    border-radius: 14px;
+
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.admin-requests-container h3 {
+    color: #111827;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/* --------------------------------------------- */
+/* REQUEST LIST                                  */
+/* --------------------------------------------- */
+
+.admin-requests {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-height: 30vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+
+/* Custom Scrollbar (Minimal) */
+.admin-requests::-webkit-scrollbar {
+    width: 6px;
+}
+
+.admin-requests::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+}
+
+.admin-requests::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+
+/* --------------------------------------------- */
+/* REQUEST ITEM                                  */
+/* --------------------------------------------- */
+
+.admin-request {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding: 14px 20px;
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    transition: 0.2s ease;
+}
+
+.admin-request:hover {
+    background: #f3f4f6;
+}
+
+.admin-request span {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-request span b {
+    color: #111827;
+    font-weight: 600;
+}
+
+.admin-request span small {
+    color: #6b7280;
+}
+
+
+/* --------------------------------------------- */
+/* ACTION BUTTONS                                */
+/* --------------------------------------------- */
+
+.admin-request-actions {
+    display: flex;
+    gap: 14px;
+}
+
+.admin-request-actions button {
+    width: 7rem;
+    padding: 8px 0;
+
+    border-radius: 8px;
+    border: 1px solid #6366f1;
+
+    background: #6366f1;
+    color: white;
+
+    font-weight: 500;
+    font-size: 0.95rem;
+
+    transition: 0.25s ease;
+}
+
+.admin-request-actions button:hover {
+    background: #4f46e5;
+    border-color: #4f46e5;
+}
